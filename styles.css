@@ -1,0 +1,194 @@
+
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  footer {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title_recipes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(226, 244, 255);
+    border-radius: 50px;
+    gap: 25px; /* Add spacing between grid items */
+    padding: 30px;
+    margin-left:70px;
+    margin-right:70px;
+  }
+
+    img {
+        border-radius: 20px;
+    }
+
+    .odinlogo {
+      max-width: 190px;
+      width: 100%;
+    }
+    
+    .cover {
+      text-align: center;
+      transition-property: transform, filter, brightness;
+      transition-duration: 1s;
+      transition-timing-function: ease;
+    }
+
+    .cover img {
+      max-height: 200px; /* Limit image height */
+      object-fit: cover;
+  }
+
+    .cover:hover {
+        transform: scale(1.15);
+        filter: brightness(1.35); 
+    }
+
+  .cover:hover .textonimg {
+    opacity: 1;
+    color: white;
+  }
+
+  .recipeimg {
+    object-fit: cover;
+    border-radius: 20px;
+
+    max-width: 700px; /* Set your desired maximum width */
+    width: 100%;
+  }
+
+  .buuz, .khuushuur, .khorkhog, .lapsha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    max-width: 700px; /* Set your desired maximum width */
+    width: 100%;
+  }
+
+  .title_recipes_4page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 244, 255);
+    border-radius: 40px;
+    padding: 30px;
+    margin-left:70px;
+    margin-right:70px;
+  }
+
+  .recipe_ingredients_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 20px;
+  }
+
+  .ingredients {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+
+    max-width: 600px; /* Set your desired maximum width */
+    width: 100%;
+    padding-left: 70px;
+  }
+
+  .recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+
+    max-width: 600px; /* Set your desired maximum width */
+    width: 70%;
+    padding-left:70px;
+  }
+
+@media (max-width: 600px) {
+
+  .recipe_ingredients_container {
+    grid-template-columns: 1fr;
+    margin-left: 10px;
+    margin-right: 50px;
+  }
+
+  .recipe {
+    max-width: 100%; /* Allow the div to take up the full width on smaller screens */
+    padding: 10px; /* Adjust padding or margins for better mobile display */
+    flex: none;
+    width: 100%;
+  }
+
+  .ingredients {
+    max-width: 100%; /* Allow the div to take up the full width on smaller screens */
+    padding: 10px; /* Adjust padding or margins for better mobile display */
+    flex: none;
+  }
+
+  .recipeimg {
+    max-width: 100%; /* Allow the div to take up the full width on smaller screens */
+    padding: 10px;
+  }
+
+  .buuz {
+    max-width: 100%; /* Allow the div to take up the full width on smaller screens */
+    padding: 10px;
+  }
+}
+
+@media (max-width: 702px) {
+  .title_recipes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .title_recipes_4page {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 850px) {
+  .title_recipes {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+
+
+.backbtn {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+
+.backbtn img {
+    max-width: 60px; /* Adjust the maximum width as needed */
+    height: auto;
+}
+
+.backbtn:hover {
+  transform: translateY(-10px);
+}
